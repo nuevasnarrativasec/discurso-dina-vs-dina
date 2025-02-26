@@ -10,28 +10,28 @@ body{
 
 @font-face {
     font-family: 'prelo_slabbook';
-    src: url('https://d1ts5g4ys243sh.cloudfront.net/proyectos_especiales_prod/especiales-multimedia/discurso-dina-boluarte-2024/fonts/preloslab-book-webfont.woff2') format('woff2'),
-         url('https://d1ts5g4ys243sh.cloudfront.net/proyectos_especiales_prod/especiales-multimedia/discurso-dina-boluarte-2024/fonts/preloslab-book-webfont.woff') format('woff');
+    src: url('https://nuevasnarrativasec.github.io/discurso-dina-vs-dina/fonts/preloslab-book-webfont.woff2') format('woff2'),
+         url('https://nuevasnarrativasec.github.io/discurso-dina-vs-dina/fonts/preloslab-book-webfont.woff') format('woff');
 }
 @font-face {
     font-family: 'prelo_slabmedium';
-    src: url('https://d1ts5g4ys243sh.cloudfront.net/proyectos_especiales_prod/especiales-multimedia/discurso-dina-boluarte-2024/fonts/preloslab-medium-webfont.woff2') format('woff2'),
-         url('https://d1ts5g4ys243sh.cloudfront.net/proyectos_especiales_prod/especiales-multimedia/discurso-dina-boluarte-2024/fonts/preloslab-medium-webfont.woff') format('woff');
+    src: url('https://nuevasnarrativasec.github.io/discurso-dina-vs-dina/fonts/preloslab-medium-webfont.woff2') format('woff2'),
+         url('https://nuevasnarrativasec.github.io/discurso-dina-vs-dina/fonts/preloslab-medium-webfont.woff') format('woff');
 }
 @font-face {
     font-family: 'prelo_slabsemibold';
-    src: url('https://d1ts5g4ys243sh.cloudfront.net/proyectos_especiales_prod/especiales-multimedia/discurso-dina-boluarte-2024/fonts/preloslab-semibold-webfont.woff2') format('woff2'),
-         url('https://d1ts5g4ys243sh.cloudfront.net/proyectos_especiales_prod/especiales-multimedia/discurso-dina-boluarte-2024/fonts/preloslab-semibold-webfont.woff') format('woff');
+    src: url('https://nuevasnarrativasec.github.io/discurso-dina-vs-dina/fonts/preloslab-semibold-webfont.woff2') format('woff2'),
+         url('https://nuevasnarrativasec.github.io/discurso-dina-vs-dina/fonts/preloslab-semibold-webfont.woff') format('woff');
 }
 @font-face {
     font-family: 'prelo_slabbold';
-    src: url('https://d1ts5g4ys243sh.cloudfront.net/proyectos_especiales_prod/especiales-multimedia/discurso-dina-boluarte-2024/fonts/preloslab-bold-webfont.woff2') format('woff2'),
-         url('https://d1ts5g4ys243sh.cloudfront.net/proyectos_especiales_prod/especiales-multimedia/discurso-dina-boluarte-2024/fonts/preloslab-bold-webfont.woff') format('woff');
+    src: url('https://nuevasnarrativasec.github.io/discurso-dina-vs-dina/fonts/preloslab-bold-webfont.woff2') format('woff2'),
+         url('https://nuevasnarrativasec.github.io/discurso-dina-vs-dina/fonts/preloslab-bold-webfont.woff') format('woff');
 }
 @font-face {
     font-family: 'prelo_slabextrabold';
-    src: url('https://d1ts5g4ys243sh.cloudfront.net/proyectos_especiales_prod/especiales-multimedia/discurso-dina-boluarte-2024/fonts/preloslab-extrabold-webfont.woff2') format('woff2'),
-         url('https://d1ts5g4ys243sh.cloudfront.net/proyectos_especiales_prod/especiales-multimedia/discurso-dina-boluarte-2024/fonts/preloslab-extrabold-webfont.woff') format('woff');
+    src: url('https://nuevasnarrativasec.github.io/discurso-dina-vs-dina/fonts/preloslab-extrabold-webfont.woff2') format('woff2'),
+         url('https://nuevasnarrativasec.github.io/discurso-dina-vs-dina/fonts/preloslab-extrabold-webfont.woff') format('woff');
 }
 
 .clear{
@@ -514,7 +514,7 @@ body{
                     height: 100%;
                 }    
                     .lineas-reloj{
-                        background: url('https://d1ts5g4ys243sh.cloudfront.net/proyectos_especiales_prod/especiales-multimedia/discurso-dina-vs-dina/img/lineas-reloj-2.png') no-repeat center top;
+                        background: url('https://nuevasnarrativasec.github.io/discurso-dina-vs-dina/img/lineas-reloj-2.png') no-repeat center top;
                         background-size: cover;
                         height: 100%;
                         position: absolute;
@@ -888,55 +888,55 @@ body{
             width: 100%;
         }
             .bg-portada-ano-2023{
-                background: url('https://d1ts5g4ys243sh.cloudfront.net/proyectos_especiales_prod/especiales-multimedia/discurso-dina-vs-dina/img/bg-dina-izq-portada.png') no-repeat center bottom;
+                background: url('https://nuevasnarrativasec.github.io/discurso-dina-vs-dina/img/bg-dina-izq-portada.png') no-repeat center bottom;
                 background-size: 100%;
                 border-bottom: 1px solid #c2c2c2;
                 display: block;
             }
                 .bg-imagen-2023{
-                    background: url('https://d1ts5g4ys243sh.cloudfront.net/proyectos_especiales_prod/especiales-multimedia/discurso-dina-vs-dina/img/bg-dina-izq-portada.png') no-repeat center bottom;
+                    background: url('https://nuevasnarrativasec.github.io/discurso-dina-vs-dina/img/bg-dina-izq-portada.png') no-repeat center bottom;
                     background-size: 100%;
                 }
                 .bg-accesorios-2023{
-                    background: url('https://d1ts5g4ys243sh.cloudfront.net/proyectos_especiales_prod/especiales-multimedia/discurso-dina-vs-dina/img/bg-dina-izq-portada.png') no-repeat center bottom;
+                    background: url('https://nuevasnarrativasec.github.io/discurso-dina-vs-dina/img/bg-dina-izq-portada.png') no-repeat center bottom;
                     background-size: 100%;
                 }
                 .bg-postura-2023{
-                    background: url('https://d1ts5g4ys243sh.cloudfront.net/proyectos_especiales_prod/especiales-multimedia/discurso-dina-vs-dina/img/bg-dina-izq-portada.png') no-repeat center bottom;
+                    background: url('https://nuevasnarrativasec.github.io/discurso-dina-vs-dina/img/bg-dina-izq-portada.png') no-repeat center bottom;
                     background-size: 100%;
                 }
                 .bg-ropa-2023{
-                    background: url('https://d1ts5g4ys243sh.cloudfront.net/proyectos_especiales_prod/especiales-multimedia/discurso-dina-vs-dina/img/bg-dina-izq-portada.png') no-repeat center bottom;
+                    background: url('https://nuevasnarrativasec.github.io/discurso-dina-vs-dina/img/bg-dina-izq-portada.png') no-repeat center bottom;
                     background-size: 100%;
                 }
                 .bg-otros-2023{
-                    background: url('https://d1ts5g4ys243sh.cloudfront.net/proyectos_especiales_prod/especiales-multimedia/discurso-dina-vs-dina/img/bg-dina-izq-portada.png') no-repeat center bottom;
+                    background: url('https://nuevasnarrativasec.github.io/discurso-dina-vs-dina/img/bg-dina-izq-portada.png') no-repeat center bottom;
                     background-size: 100%;
                 }
             .bg-portada-ano-2024{
-                background: url('https://d1ts5g4ys243sh.cloudfront.net/proyectos_especiales_prod/especiales-multimedia/discurso-dina-vs-dina/img/bg-dina-izq-portada.png') no-repeat center bottom;
+                background: url('https://nuevasnarrativasec.github.io/discurso-dina-vs-dina/img/bg-dina-izq-portada.png') no-repeat center bottom;
                 background-size: 100%;
                 border-bottom: 1px solid #c2c2c2;
                 display: block;
             }
                 .bg-imagen-2024{
-                    background: url('https://d1ts5g4ys243sh.cloudfront.net/proyectos_especiales_prod/especiales-multimedia/discurso-dina-vs-dina/img/bg-dina-izq-portada.png') no-repeat center bottom;
+                    background: url('https://nuevasnarrativasec.github.io/discurso-dina-vs-dina/img/bg-dina-izq-portada.png') no-repeat center bottom;
                     background-size: 100%;
                 }
                 .bg-accesorios-2024{
-                    background: url('https://d1ts5g4ys243sh.cloudfront.net/proyectos_especiales_prod/especiales-multimedia/discurso-dina-vs-dina/img/bg-dina-izq-portada.png') no-repeat center bottom;
+                    background: url('https://nuevasnarrativasec.github.io/discurso-dina-vs-dina/img/bg-dina-izq-portada.png') no-repeat center bottom;
                     background-size: 100%;
                 }
                 .bg-postura-2024{
-                    background: url('https://d1ts5g4ys243sh.cloudfront.net/proyectos_especiales_prod/especiales-multimedia/discurso-dina-vs-dina/img/bg-dina-izq-portada.png') no-repeat center bottom;
+                    background: url('https://nuevasnarrativasec.github.io/discurso-dina-vs-dina/img/bg-dina-izq-portada.png') no-repeat center bottom;
                     background-size: 100%;
                 }
                 .bg-ropa-2024{
-                    background: url('https://d1ts5g4ys243sh.cloudfront.net/proyectos_especiales_prod/especiales-multimedia/discurso-dina-vs-dina/img/bg-dina-izq-portada.png') no-repeat center bottom;
+                    background: url('https://nuevasnarrativasec.github.io/discurso-dina-vs-dina/img/bg-dina-izq-portada.png') no-repeat center bottom;
                     background-size: 100%;
                 }
                 .bg-otros-2024{
-                    background: url('https://d1ts5g4ys243sh.cloudfront.net/proyectos_especiales_prod/especiales-multimedia/discurso-dina-vs-dina/img/bg-dina-izq-portada.png') no-repeat center bottom;
+                    background: url('https://nuevasnarrativasec.github.io/discurso-dina-vs-dina/img/bg-dina-izq-portada.png') no-repeat center bottom;
                     background-size: 100%;
                 }
 ul.leyenda-items{
