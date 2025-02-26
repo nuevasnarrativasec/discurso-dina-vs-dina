@@ -11,12 +11,14 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">    
 
-    <link rel="stylesheet" href="https://nuevasnarrativasec.github.io/discurso-dina-vs-dina/css/style.css?v123">
+    <link rel="stylesheet" href="https://nuevasnarrativasec.github.io/discurso-dina-vs-dina/css/style.css?v125">
     <!--<link rel="stylesheet" href="https://nuevasnarrativasec.github.io/discurso-dina-vs-dina/css/style-mini.css?v2">-->
 
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,100..900;1,100..900&family=Noto+Serif+KR:wght@200..900&family=Source+Sans+3:ital,wght@0,200..900;1,200..900&display=swap" rel="stylesheet">
+
+    <script src="https://cdn.jsdelivr.net/npm/lozad/dist/lozad.min.js"></script>
 
     <style>
         .skin-template-model0.ads_pushed,
@@ -62,7 +64,6 @@
             }
 
         }
-
          
         .st0{fill:#E51A1A;}
         .st1{fill:#4699C6;}
@@ -73,6 +74,15 @@
         .st2,
         .st3{
             cursor: pointer;
+        }
+
+        .lazy-load {
+            opacity: 0;
+            transition: opacity 0.5s ease-in-out;
+        }
+
+        .lazy-load.loaded {
+            opacity: 1;
         }
 
     </style>
@@ -1120,14 +1130,14 @@
 
         <div class="ctn-box-main">            
 
-            <div class="box-aprobacion">
+            <div class="box-aprobacion lozad" data-loaded="false">
                 <div class="flourish-embed flourish-chart" data-src="visualisation/18697148"><script src="https://public.flourish.studio/resources/embed.js"></script></div>
                 <p>
                     Según encuesta de Datum Internacional para <span>El Comercio</span>, la presidenta Dina Boluarte alcanza la cifra de respaldo más baja de un gobernante peruano de la que se tiene registro. Su desaprobación sube a 91% a un año y medio de iniciar su gestión.
                 </p>
             </div>
 
-            <div class="box-analisis-sentimiento">
+            <div class="box-analisis-sentimiento lozad" data-loaded="false">
                 <h3>
                     Análisis de sentimiento de cada discurso                
                 </h3>  
@@ -2432,7 +2442,7 @@
                             </div>
                         </div>
                     </div> 
-                    <div class="box-palabras">
+                    <div class="box-palabras lozad" data-loaded="false">
                         <h5 style="margin-bottom: 0;">Número de palabras</h5>
                         <p>
                             20,146 palabras del discurso del 2023 equivalen a 74 páginas en el documento entregado al Congreso; mientras que 33,436 palabras representaron 79 páginas el 2024. Esta variación está relacionada al tamaño de la tipografía empleada en los documentos oficiales.
@@ -2441,7 +2451,7 @@
                             <div class="flourish-embed flourish-bar-chart-race" data-src="visualisation/18697439"><script src="https://public.flourish.studio/resources/embed.js"></script></div>
                         </div>                        
                     </div>
-                    <div class="box-referencias">
+                    <div class="box-referencias lozad" data-loaded="false">
                         <h5>Tiempos verbales</h5>
                         <p>
                             Mediante procesamiento de lenguaje natural (NLP) y librerías abiertas; identificamos los tiempos verbales empleados en el discurso como referencia a lo ejecutado, el presente y la perspectiva del futuro.
@@ -2532,16 +2542,18 @@
                             </div>
                         </div>
                     </div>
-                    <div class="box-ejes-tematicos">
+                    <div class="box-ejes-tematicos lozad" data-loaded="false">
                         <h5>Ejes temáticos</h5>
                         <p style="padding: 0 5px;">
                             Revisamos los principales temas abordados en los discursos de Boluarte e identificamos la cantidad de veces que fueron mencionados, así como aquellos que estuvieron ausentes. Mediante el uso de ChatGPT4o y prompts específicamente configurados y afinados agilizamos la interpretación de datos que luego fue validada independientemente por nuestros periodistas.
                         </p>
                         <div class="box-iframe">
-                            <div class="flourish-embed flourish-chart" data-src="visualisation/18718710"><script src="https://public.flourish.studio/resources/embed.js"></script></div>
+                            <div class="flourish-embed flourish-chart" data-src="visualisation/18718710">
+                                <script src="https://public.flourish.studio/resources/embed.js"></script>
+                            </div>
                         </div>
                     </div>
-                    <div class="box-ejes-tematicos">
+                    <div class="box-ejes-tematicos lozad" data-loaded="false">
                         <h5>Anuncios de inversión</h5>
                         <p>
                             Se enlistó las promesas de inversión mencionadas por la mandataria en ambos discursos presidenciales y se distribuyó por sectores. <span style="font-weight: 700;">Las cifras están expresadas en millones de soles.</span>
@@ -2550,7 +2562,7 @@
                             <div class="flourish-embed flourish-chart" data-src="visualisation/18852488"><script src="https://public.flourish.studio/resources/embed.js"></script></div>
                         </div>
                     </div>
-                    <div class="box-mapas-regiones">
+                    <div class="box-mapas-regiones lazy-load" data-content='
                         <h5>Mención a regiones</h5>
                         <p style="font-style: normal;">
                             El análisis de datos fue realizado por nuestros periodistas de forma detallada.
@@ -2572,7 +2584,7 @@
                         <p class="year-mapa">2024</p>
                         <img src="https://nuevasnarrativasec.github.io/discurso-dina-vs-dina/img/mapa-regiones-2024.jpg" alt="" width="100%">
                         <p class="year-mapa">2023</p>
-                        <img src="https://nuevasnarrativasec.github.io/discurso-dina-vs-dina/img/mapa-regiones-2023.jpg" alt="" width="100%">
+                        <img src="https://nuevasnarrativasec.github.io/discurso-dina-vs-dina/img/mapa-regiones-2023.jpg" alt="" width="100%">'>
                     </div>
                 </div>
 
@@ -4380,7 +4392,7 @@
 
             <div class="box-columna-movil" id="box-columna-movil">               
     
-                <div class="box-discurso">
+                <div class="box-discurso lozad" data-loaded="false">
                     <h3 style="border-bottom: 0; text-align: center;">Análisis del discurso</h3>   
                     <div class="box-main-titulo-analisis">
                         <div class="box-titulo-analisis">
@@ -4421,7 +4433,7 @@
                     <p>Al cumplir con una tradición republicana arraigada firmemente en nuestra historia, honro a los padres fundadores de la patria, y a todos los que, hace 200 años, entregaron sus vidas y lucharon en las pampas de Junín y de Ayacucho para alcanzar el más preciado de los triunfos, el de la libertad y la independencia de nuestros pueblos.</p>
                 </div>  
     
-                <div class="box-duracion box-duracion-discurso">
+                <div class="box-duracion box-duracion-discurso lozad" data-loaded="false">
                     <h5>Duración del discurso</h5>
                     <div class="box-reloj">
                         <p>2024</p>
@@ -4447,7 +4459,7 @@
                     </div>
                 </div>  
                 
-                <div class="box-discurso">
+                <div class="box-discurso lozad" data-loaded="false">
                     <p>A lo largo de estos 200 años nos hemos enfrentado a una serie de situaciones que han puesto a prueba nuestra fuerza y coraje por la patria, y que han demandado la unión de todos para salir adelante. A partir de ello, hemos ido reconociendo el aporte de los diversos pueblos del Perú y también la necesidad de hacer efectivos los derechos para todas las peruanas y peruanos, especialmente de las minorías, grupos que han sido históricamente discriminados, como los pueblos indígenas u originarios y el pueblo afroperuano. Seguiremos luchando contra el racismo, el machismo y todas las formas de violencia. El Perú del Bicentenario avanza hacia la igualdad de oportunidades incluyendo en ese camino a toda la diversidad de su población.</p>
 
                     <p>Lo cierto es que, en estos 200 años, hemos logrado superar una serie de avatares que pusieron a prueba el temple de las instituciones y la fe inquebrantable del pueblo peruano por un mejor futuro.</p>
@@ -4458,7 +4470,7 @@
                     <p>¡Defendimos la economía social de mercado, la libre iniciativa privada y el derecho de nuestros ciudadanos al trabajo, al crecimiento y el progreso!</p>
                 </div>
     
-                <div class="box-palabras">
+                <div class="box-palabras lozad" data-loaded="false">
                     <h5 style="margin-bottom: 0;">Número de palabras</h5>
                     <p>
                         20,146 palabras del discurso del 2023 equivalen a 74 páginas en el documento entregado al Congreso; mientras que 33,436 palabras representaron 79 páginas el 2024. Esta variación está relacionada al tamaño de la tipografía empleada en los documentos oficiales.
@@ -4468,7 +4480,7 @@
                     </div>                        
                 </div>
     
-                <div class="box-discurso">
+                <div class="box-discurso lozad" data-loaded="false">
                     <p>Asumí la Presidencia de la República en un momento dramático y difícil. Recibí un país paralizado, por responsabilidad de un gobierno causante de la peor crisis de confianza y de la mayor fuga de capitales de los últimos 50 años.</p>
 
                     <p>Un país polarizado y dividido, sumergido en una profunda crisis política. Un país donde los conflictos sociales se habían incrementado, en gran parte, alentados por el propio gobierno. Hasta hoy los peruanos seguimos pagando las</p>
@@ -4492,7 +4504,7 @@
 
                 </div>
     
-                <div class="box-referencias">
+                <div class="box-referencias lozad" data-loaded="false">
                     <h5>Tiempos verbales</h5>
                     <p>
                         Mediante procesamiento de lenguaje natural (NLP) y librerías abiertas; identificamos los tiempos verbales empleados en el discurso como referencia a lo ejecutado, el presente y la perspectiva del futuro.
@@ -4502,7 +4514,7 @@
                     </div> 
                 </div>
     
-                <div class="box-discurso">
+                <div class="box-discurso lozad" data-loaded="false">
                     <p>Hoy, al cabo de un año y siete meses de gobierno, podemos ver los primeros resultados de este trabajo, que es fruto de la acción compartida de los tres niveles de gobierno, las instituciones públicas y privadas y los ciudadanos y ciudadanas del Perú.</p>
 
                     <p>Quiero aquí rendir homenaje a los peruanos y peruanas de a pie, héroes anónimos y sencillos, que día a día construyen nuestro país con su esfuerzo, sus ilusiones y sus proyectos de una vida digna, haciendo posible un futuro promisorio para todos.</p>
@@ -4514,7 +4526,7 @@
                     
                 </div>
     
-                <div class="box-palabras-mencionadas">
+                <div class="box-palabras-mencionadas lozad" data-loaded="false">
                     <h5>Palabras más mencionadas</h5>
                     <p>
                         "Millones", "inversión", "año" y "gobierno" son las palabras más mencionadas en el mensaje a la Nación de 2024.
@@ -4597,7 +4609,7 @@
                     </div>
                 </div>      
                 
-                <div class="box-discurso">
+                <div class="box-discurso lozad" data-loaded="false">
                     <p>
                         <span class="enganoso texto" id="frase-enganoso-7-movil">
                         <img src="https://nuevasnarrativasec.github.io/discurso-dina-vs-dina/img/icon-factcheking.png" alt="" width="100%">
@@ -4634,7 +4646,7 @@
 
                 </div>
 
-                <div class="box-ejes-tematicos">
+                <div class="box-ejes-tematicos lozad" data-loaded="false">
                     <h5>Ejes temáticos</h5>
                     <p style="padding: 0 5px;">
                         Revisamos los principales temas abordados en los discursos de Boluarte e identificamos la cantidad de veces que fueron mencionados, así como aquellos que estuvieron ausentes. Mediante el uso de ChatGPT4o y prompts específicamente configurados y afinados agilizamos la interpretación de datos que luego fue validada independientemente por nuestros periodistas.
@@ -4644,7 +4656,7 @@
                     </div>
                 </div>
 
-                <div class="box-discurso">
+                <div class="box-discurso lozad" data-loaded="false">
                     <p>
                         <span class="verdadero texto" id="frase-verdadero-5-movil">
                         <img src="https://nuevasnarrativasec.github.io/discurso-dina-vs-dina/img/icon-factcheking.png" alt="" width="100%">
@@ -4676,7 +4688,7 @@
 
                 </div>
 
-                <div class="box-ejes-tematicos">
+                <div class="box-ejes-tematicos lozad" data-loaded="false">
                     <h5>Anuncios de inversión</h5>
                     <p>
                         Se enlistó las promesas de inversión mencionadas por la mandataria en ambos discursos presidenciales y se distribuyó por sectores. <span style="font-weight: 700;">Las cifras están expresadas en millones de soles.</span>
@@ -4686,7 +4698,7 @@
                     </div>
                 </div>
 
-                <div class="box-discurso">
+                <div class="box-discurso lozad" data-loaded="false">
                     <p>Acabamos de inaugurar el Muelle Bicentenario en el terminal de contenedores en el Terminal del Callao que permitirá recibir simultáneamente hasta tres buques tipo Neo Panamax. Con esta obra, la capacidad del muelle se incrementó en un 80%, gestionando hasta 2.7 millones de contenedores, lo que redundará en una mayor eficiencia del comercio internacional y la generación de empleo.</p>
 
                     <p>En diciembre del 2023 se concluyó el estudio definitivo para la construcción de la Vía Expresa Santa Rosa, que conectará la Costa Verde con el nuevo acceso al Aeropuerto Internacional Jorge Chávez y permitirá soportar el tránsito de vehículos que generará el nuevo terminal aeroportuario y darle modernidad y transitabilidad al Callao.</p>
@@ -4706,7 +4718,7 @@
                     <p>internet de banda ancha, asegurando una conectividad pronta y eficaz, contribuyendo de esta manera, a la equidad territorial al mejorar sus procesos de aprendizaje educativo y su productividad.</p>
                 </div>
 
-                <div class="box-mapas-regiones">
+                <div class="box-mapas-regiones lozad" data-loaded="false">
                     <h5>Mención a regiones</h5>
                     <p style="font-style: normal;">
                         El análisis de datos fue realizado por nuestros periodistas de forma detallada.
@@ -4731,7 +4743,7 @@
                     <img src="https://nuevasnarrativasec.github.io/discurso-dina-vs-dina/img/mapa-regiones-2023.jpg" alt="" width="100%">
                 </div>
                 
-                <div id="text-container-movil">
+                <div id="text-container-movil lozad" data-loaded="false">
                     <div class="box-discurso">
                         
                         <p>A través del MTC hemos entregado más de 29 mil tablets a los gobiernos regionales de Lambayeque, Apurímac y Ayacucho, para su distribución en 1,276 escuelas públicas, aportando herramientas para potenciar la educación de nuestros niños.</p>
@@ -6269,7 +6281,7 @@
                     <img src="https://d1ts5g4ys243sh.cloudfront.net/proyectos_especiales_prod/especiales/agenda-fecha-triple-eliminatorias-qatar-2022-nndd-ecvisual-ecpm/img/logo_ec.png" alt="" width="100%">
                 </a>            
             </div>
-            <div class="box-creditos">
+            <div class="box-creditos lazy-load" data-content='
                 <h5>Producción Periodística</h5>
                 <h6>Redacción y análisis:</h6>
                 <p>
@@ -6299,10 +6311,10 @@
                 <h6>Director periodístico:</h6>
                 <p>
                     Juan Aurelio Arévalo
-                </p>
+                </p>'>
             </div>
     
-            <div class="box-creditos">
+            <div class="box-creditos lazy-load" data-content='
                 <h5>Nuevas Narrativas</h5>
                 <h6>Investigación con IA:</h6>
                 <p>
@@ -6338,32 +6350,26 @@
                 <h6>Producción general</h6>
                 <p>
                     Gisella Salmón
-                </p>
+                </p>'>
             </div>
     
-            <div class="box-creditos">
+            <div class="box-creditos lazy-load" data-content='
                 <h5>Producción audiovisual</h5>
                 <h6>Videos:</h6>
-                <p>
-                    Carls Mayo
-                </p>
-                <p>
-                    Billy Flores
-                </p>
-                <p>
-                    Wendy Vega
-                </p>
-    
+                <p>Carls Mayo</p>
+                <p>Billy Flores</p>
+                <p>Wendy Vega</p>
+                
                 <h6>Fotografía:</h6>
                 <p>
-                    <span class="quechua-italic">Edición fotográfica:</span>  <br>             
+                    <span class="quechua-italic">Edición fotográfica:</span> <br>             
                     M. Sánchez 
                 </p>
                 <p>
-                    <span class="quechua-italic">Fotos:</span>  <br>             
+                    <span class="quechua-italic">Fotos:</span> <br>             
                     AFP <br>
                     Presidencia de la República
-                </p>
+                </p>'>
             </div>
     
         </div>
@@ -6375,8 +6381,58 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/0.2.0/Chart.min.js"></script>
     <script src="https://nuevasnarrativasec.github.io/discurso-dina-vs-dina/js/main.js"></script>
 
+    <!-- lazy load -->
+    <script>
+        document.addEventListener("DOMContentLoaded", function () {
+            let lazyDivs = document.querySelectorAll(".lazy-load");
 
-    
+            let observer = new IntersectionObserver((entries, observer) => {
+                entries.forEach(entry => {
+                    if (entry.isIntersecting) {
+                        let div = entry.target;
+                        div.innerHTML = div.dataset.content; // Inserta el contenido
+
+                        // Vuelve a ejecutar el script de Flourish si hay embeds
+                        let flourishScripts = div.querySelectorAll(".flourish-embed script");
+                        flourishScripts.forEach(script => {
+                            let newScript = document.createElement("script");
+                            newScript.src = script.src;
+                            document.body.appendChild(newScript);
+                        });
+
+                        div.classList.add("loaded");
+                        observer.unobserve(div);
+                    }
+                });
+            });
+
+            lazyDivs.forEach(div => observer.observe(div));
+        });
+
+
+    </script>
+
+    <!-- lozad -->
+    <script>
+        document.addEventListener("DOMContentLoaded", function () {
+            const observer = lozad('.lozad', {
+                loaded: function(el) {
+                    if (el.dataset.loaded === "false") {
+                        let iframeContainer = el.querySelector(".box-iframe");
+                        iframeContainer.innerHTML = iframeContainer.dataset.iframe;
+                        
+                        // Ejecutar el script de Flourish manualmente
+                        let flourishScript = document.createElement("script");
+                        flourishScript.src = "https://public.flourish.studio/resources/embed.js";
+                        document.body.appendChild(flourishScript);
+
+                        el.dataset.loaded = "true"; // Evita recargarlo varias veces
+                    }
+                }
+            });
+            observer.observe();
+        });
+    </script>
 
 </body>
 </html>
